@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Start page</title>
+</head>
+<body>
+<h1>Welcome to Users List Service</h1>
+<br>
+<p>
+<form th:action="@{/users}" method="get">
+    <input type="submit" value="Go to list">
+</form>
+</p>
+</body>
+</html>
