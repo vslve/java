@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+<body>
+<h1>This is Main Page</h1>
+<a href="/auth/welcome">Go to Welcome Page</a>
+<form th:action="@{/auth/logout}" method="post">
+    <input type="submit" value="Log Out"/>
+</form>
+</body>
+</html>
