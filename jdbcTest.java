@@ -23,10 +23,13 @@ public class jdbcTest {
 
             while (result.next()) {
                 for (int i = 1; i <= columnsCount; ++i) {
-                    System.out.print(result.getString(i) + "\t\t");
+                    if (i == columnsCount) {
+                        System.out.print(result.getString(i));
+                    } else {
+                        System.out.print(result.getString(i) + ":" + "\t\t");
+                    }
                 }
                 System.out.println();
-
             }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
