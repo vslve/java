@@ -1,8 +1,12 @@
 import java.sql.*;
 
 public class jdbcTest {
-    public static void main(String[] args) throws ClassNotFoundException {
-        Class.forName("org.postgresql.Driver");
+    public static void main(String[] args) {
+        try {
+            Class.forName("org.postgresql.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
 
         try {
             Connection connection = DriverManager.getConnection(
