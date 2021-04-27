@@ -9,7 +9,6 @@ import org.json.JSONException;
 import java.io.IOException;
 
 public class Source {
-
     private static String getEndPoint(String url, String... params) {
         StringBuilder endPoint = new StringBuilder(url);
         if (params.length == 0) {

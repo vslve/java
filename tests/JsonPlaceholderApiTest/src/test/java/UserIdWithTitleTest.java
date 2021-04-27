@@ -18,7 +18,6 @@ public class UserIdWithTitleTest {
             Map.entry(10, List.of("laboriosam dolor voluptates", "beatae soluta recusandae"))
     );
 
-
     @Test
     public void test() throws JSONException, IOException {
         for (int userId : correctUserIds) {
@@ -50,7 +49,4 @@ public class UserIdWithTitleTest {
     public void testPostTitle(JSONObject post, String expectedTitle) throws JSONException {
         Assertions.assertEquals(expectedTitle, post.getString("title"));
     }
-
-
-
 }
